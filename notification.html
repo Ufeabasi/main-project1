@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Notification Bar</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#notification-bar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#notification-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <div id="notification-bar" class="hidden">
+    <span id="notification-message"></span>
+    <button id="notification-close">×</button>
+  </div>
+  <script >
+    // script.js
+const notificationBar = document.getElementById('notification-bar');
+const notificationMessage = document.getElementById('notification-message');
+const notificationClose = document.getElementById('notification-close');
+
+// Show Notification
+function showNotification(message, duration = 3000, bgColor = '#333', textColor = '#fff') {
+  notificationMessage.textContent = message;
+  notificationBar.style.backgroundColor = bgColor;
+  notificationBar.style.color = textColor;
+  notificationBar.classList.add('visible');
+
+  // Auto-hide after duration
+  setTimeout(() => {
+    hideNotification();
+  }, duration);
+}
+
+// Hide Notification
+function hideNotification() {
+  notificationBar.classList.remove('visible');
+}
+
+// Close button event
+notificationClose.addEventListener('click', hideNotification);
+
+// Example Usage
+// showNotification('This is a custom notification!', 5000, '#28a745', '#ffffff');
+
+  </script>
+</body>
+</html>

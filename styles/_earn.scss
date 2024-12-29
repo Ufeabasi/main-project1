@@ -1,0 +1,257 @@
+//  {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: 0;
+//     color: rgb(255, 255, 255);
+//     font-family: montserrat;
+//     font-size: 1rem;
+//     // img {
+//     //     height: 30px;
+//     // }
+// }
+
+body {
+    // padding: 5px;
+    // img {
+    //     height: 23px;
+    // }
+
+    .earn-container {
+        height: 100vh;
+        max-width:  480px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .task-section-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .task-section-title-img {
+                padding-top: 25px;
+        
+                img {
+                    height: 35px;
+                    width: auto;
+                }
+            }
+            .task-section-title {
+                font-size: 3.5rem;
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+        }
+        
+        .daily-bonus-section {
+            margin: 20px 10px;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 8px;
+            background-color: $primary-gray;
+            .daily-bonus {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .daily-bonus-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    .daily-bonus-img {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-right: 6px;
+                        img {
+                            height: 30px;
+                            width: auto;
+                        }
+                    }
+                    .daily-bonus-details {
+                        .daily-bonus-title {
+                            color: white;
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                        }
+                        .daily-bonus-price {
+                            // color:rgb(255, 145, 0);
+                            color:rgb(255, 166, 0);
+                            font-weight: 540;
+                        }
+                    }
+                }
+                .daily-bonus-actions {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .daily-bonus-btn {
+                        background-color: $primary-white;
+                        color: black;
+                        font-weight: bold;
+                        padding: 3px 10px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //tab for game and task
+
+        .earn-tab {
+            .tabs {
+                display: flex;
+                justify-content: space-around;
+                background-color: #1e1e1e;
+                padding: 2px;
+                border-radius: 8px;
+                margin: 0px 10px;
+            }
+            
+            .tab {
+                background: none;
+                border: none;
+                color: $primary-text-gray;
+                font-size: 1.2em;
+                font-weight: bold;
+                cursor: pointer;
+                width: 95%;
+                margin: 0 auto;
+                border-radius: 5px;
+                margin: 2px;
+            }
+            
+            .tab.active {
+                color: white;
+                font-weight: bold;
+                background-color: $primary-dark-gray;
+                padding: 8px 0px;
+            }
+            
+            /* Tab Content */
+            .tab-content {
+                background-color: rgba(77, 76, 76, 0.116);
+                margin: 0px 15px;
+                border-radius: 12px;
+                display: none;
+                // padding: 35px 0px;
+                
+                .game-card {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 20px 0px;
+                    background-color: $primary-dark-gray;
+                    padding: 8px 10px;
+                    border-radius: 8px;
+                    
+                    .game-card-container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .game-img {
+                            margin-right: 8px;
+                            img {
+                                height: 45px;
+                            }
+                        }
+                        .game-card-info {
+                            p {
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                span {
+                                    background-color: $primary-blue;
+                                    padding: 2px 5px;
+                                    // border: 2px solid white;
+                                    color: white;
+                                    border-radius: 5px;
+                                    font-size: 0.7rem;
+                                }
+                            }
+                            span {
+                                color: rgb(255, 166, 0);
+                                font-weight: 540;
+                            }
+                        }
+
+                    }
+                    .game-action {
+                        p {
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                            background-color: $primary-blue;
+                            padding: 4px 15px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+            .tab-content.active {
+                display: block;
+                margin-top: 15px;
+                padding: 2px 10px;
+            }
+            .max-score-note-game {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px 15px;
+                p {
+                    font-size: 1.1rem;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+    
+
+    
+
+    
+
+}        
+
+
+
+
+
+
+/* Card styling */
+// .card {
+//     background-color: #2a2a2a;
+//     border-radius: 10px;
+//     width: calc(50% - 10px);
+//     padding: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .card img {
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 10px;
+//     margin-bottom: 10px;
+// }
+
+// .card-info p {
+//     font-size: 0.9em;
+//     margin: 5px 0;
+// }
+
+// .diamond {
+//     color: #00aaff;
+// }
+
+// /* Navigation Styling */
+// header a, header button {
+//     background: none;
+//     border: none;
+//     color: #888;
+//     font-size: 1.2em;
+//     cursor: pointer;
+// }

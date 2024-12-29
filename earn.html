@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flat-icons@1.0.0/creative.min.css">
+    
+</head>
+<body>
+
+    <div class="earn-container">
+        <!-- TASK SECTION CONTAINER -->
+        <div class="task-section-title">
+        <div class="task-section-title-img">
+            <img src="./img/task.png" alt="">
+        </div>
+        <div class="task-section-title">Tasks</div>
+        </div>
+    
+        <section class="daily-bonus-section">
+            <div class="daily-bonus">
+                <div class="daily-bonus-container">
+                    <div class="daily-bonus-img">
+                        <img src="./img/daily-bonus.png" alt="">
+                    </div>
+                    <div class="daily-bonus-details">
+                        <div class="daily-bonus-title">Daily Bonus</div>
+                        <div class="daily-bonus-price">+12,500 ERR</div>
+                    </div>
+                </div>
+                <div class="daily-bonus-actions">
+                    <div class="daily-bonus-btn">CLAIM</div>
+                    <!-- <div class="daily-bonus-countdown">21:34:09</div> -->    
+                </div>
+            </div>
+        </section>
+    
+         
+    
+        <section class="earn-tab">
+            <nav class="tabs">
+                <button class="tab active" onclick="showTab('games')">Games</button>
+                <button class="tab" onclick="showTab('tasks')">Tasks</button>
+            </nav>
+        
+            <section id="games" class="tab-content active">
+                <div class="game-card">
+                    <div class="game-card-container">
+                        <div class="game-img">
+                            <img src="./img/card-game.png" alt="">
+                        </div>
+                        <div class="game-card-info">
+                            <p>Memory Card</p>
+                            <span class="diamond">+4,000 ERR</span>
+                        </div>
+                    </div>
+                    <div class="game-action">
+                        <p>Play</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card-container">
+                        <div class="game-img">
+                            <img src="./img/color-wheel.png" alt="">
+                        </div>
+                        <div class="game-card-info">
+                            <p>Spin Wheel</p>
+                            <span class="diamond">+500 ERR</span>
+                        </div>
+                    </div>
+                    <div class="game-action">
+                        <p>Play</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card-container">
+                        <div class="game-img">
+                            <img src="./img/holdCoin.png" alt="">
+                        </div>
+                        <div class="game-card-info">
+                            <p>Hold Coin</p>
+                            <span class="diamond">+4,000 ERR</span>
+                        </div>
+                    </div>
+                    <div class="game-action">
+                        <p>Play</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card-container">
+                        <div class="game-img">
+                            <img src="./img/tap.png" alt="">
+                        </div>
+                        <div class="game-card-info">
+                            <p>Color Mixer <span>Coming soon</span></p>
+                            <span class="diamond">+4,000 ERR</span>
+                        </div>
+                    </div>
+                    <div class="game-action">
+                        <p onclick="this.disabled=true" onmouseover="this.style.cursor='not-allowed'" style="background-color: gray; color: rgb(238, 233, 233);">Play</p>
+                    </div>
+                </div>
+            </section>
+            <section class="max-score-note-game">
+                <p>The highest score attainable in the game per session</p>
+            </section>
+        
+            <section id="tasks" class="tab-content">
+                <div class="card">
+                    <div class="card-info">
+                        <p>Minigame Example</p>
+                        <p><span class="diamond">💎</span> 0/10</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+
+    
+
+    <script  src="./js/tasks.js"></script>
+</body>
+</html>

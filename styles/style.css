@@ -1,0 +1,521 @@
+@charset "UTF-8";
+body .earn-container {
+  height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body .earn-container .task-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .earn-container .task-section-title .task-section-title-img {
+  padding-top: 25px;
+}
+body .earn-container .task-section-title .task-section-title-img img {
+  height: 35px;
+  width: auto;
+}
+body .earn-container .task-section-title .task-section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+body .earn-container .daily-bonus-section {
+  margin: 20px 10px;
+  padding: 10px 15px;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: rgba(136, 136, 136, 0.5333333333);
+}
+body .earn-container .daily-bonus-section .daily-bonus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-container .daily-bonus-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 6px;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-container .daily-bonus-img img {
+  height: 30px;
+  width: auto;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-container .daily-bonus-details .daily-bonus-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-container .daily-bonus-details .daily-bonus-price {
+  color: rgb(255, 166, 0);
+  font-weight: 540;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .earn-container .daily-bonus-section .daily-bonus .daily-bonus-actions .daily-bonus-btn {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .earn-container .earn-tab {
+  /* Tab Content */
+}
+body .earn-container .earn-tab .tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e1e1e;
+  padding: 2px;
+  border-radius: 8px;
+  margin: 0px 10px;
+}
+body .earn-container .earn-tab .tab {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin: 2px;
+}
+body .earn-container .earn-tab .tab.active {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(53, 49, 49);
+  padding: 8px 0px;
+}
+body .earn-container .earn-tab .tab-content {
+  background-color: rgba(77, 76, 76, 0.116);
+  margin: 0px 15px;
+  border-radius: 12px;
+  display: none;
+}
+body .earn-container .earn-tab .tab-content .game-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  background-color: rgb(53, 49, 49);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container .game-img {
+  margin-right: 8px;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container .game-img img {
+  height: 45px;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container .game-card-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container .game-card-info p span {
+  background-color: #005ecb;
+  padding: 2px 5px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-card-container .game-card-info span {
+  color: rgb(255, 166, 0);
+  font-weight: 540;
+}
+body .earn-container .earn-tab .tab-content .game-card .game-action p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #005ecb;
+  padding: 4px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .earn-container .earn-tab .tab-content.active {
+  display: block;
+  margin-top: 15px;
+  padding: 2px 10px;
+}
+body .earn-container .earn-tab .max-score-note-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 15px;
+}
+body .earn-container .earn-tab .max-score-note-game p {
+  font-size: 1.1rem;
+  padding: 0px 15px;
+}
+
+/* Card styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  color: white;
+  font-family: montserrat;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #0C0C0F;
+}
+body .container {
+  height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+body .container .platform-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+body .container .platform-section .platform-name {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Orbitron;
+}
+body .container .platform-section span {
+  color: white;
+}
+body .container .platform-section .airdrop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #005ecb;
+  padding: 2px 5px;
+  font-weight: bold;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+body .container .platform-section .airdrop .airdrop-icon .tilting-icon-airdrop {
+  position: absolute;
+  top: -22px;
+  left: -5px;
+  rotate: -35deg;
+  height: 30px;
+  background-color: rgba(255, 153, 0, 0.01);
+  animation: tiltEffect 3s infinite ease-in-out;
+  transform-origin: center;
+}
+@keyframes tiltEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+body .container .platform-section .airdrop .airdrop-text {
+  color: white;
+  font-size: 1.3rem;
+}
+body .container .user-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .user-info-section .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .user-info-section .user-info .profile-img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+}
+body .container .user-info-section .user-info .profile-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+body .container .user-info-section .user-info .user-name {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2px;
+}
+body .container .user-info-section .user-info .level, body .container .user-info-section .user-info span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: gray;
+  padding-bottom: 5px;
+}
+body .container .user-info-section .user-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: first baseline;
+  margin: 15px;
+}
+body .container .user-info-section .user-balance .balance-img span {
+  font-size: 1.5rem;
+  font-family: Orbitron;
+}
+body .container .user-info-section .user-balance .main-balance {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-right: 9px;
+}
+body .container .bonus-code-section .bonus-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .bonus-code-section .bonus-code .bonus-code-title {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+body .container .bonus-code-section .bonus-code .bonus-code-title span {
+  font-size: 0.6rem;
+  padding: 1px 3px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+body .container .bonus-code-section .input-container {
+  display: flex;
+  gap: 9px;
+}
+body .container .bonus-code-section .input-container .digit-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, border-color 0.2s;
+}
+body .container .bonus-code-section .input-container .digit-input:focus {
+  transform: scale(1.1);
+  border-color: #4facfe;
+}
+body .container .bonus-code-section .submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #0078ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+body .container .bonus-code-section .submit-btn:hover {
+  background: #005ecb;
+}
+body .container .nav-section {
+  padding: 23px;
+}
+body .container .nav-section .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #005ecb;
+  border-image-slice: 1;
+  background: rgba(19, 16, 16, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body .container .nav-section .navbar a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+body .container .nav-section .navbar a i {
+  font-size: 15px;
+}
+body .notification-bar {
+  position: fixed;
+  top: -60px; /* Initially hidden */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  color: #fff;
+  border: 1px solid #005ecb;
+  padding: 7px 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: top 0.5s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+body .notification-bar .notification-message {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 15px;
+}
+body .notification-bar .notification-close {
+  font-size: 0.9rem;
+  margin-left: 9px;
+  padding: 0px 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+body #notification-bar.visible {
+  top: 80px;
+}
+body #notification-close {
+  cursor: pointer;
+  top: -50px;
+}
+body .hidden {
+  top: -60px;
+}
+body .slidup-menu {
+  position: fixed;
+  align-items: center;
+  bottom: -100%;
+  z-index: 200;
+  height: 90%;
+  left: 0;
+  right: 0;
+  background-color: rgb(6, 6, 22);
+  color: white;
+  border-top: 1px solid #005ecb;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.4s ease-in-out; /* Smooth transition */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+body .slidup-menu .close-menu-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+body .slidup-menu .close-menu-icon span {
+  background-color: #005ecb;
+  padding: 0px 5px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+body .slidup-menu.slidup-menu .close {
+  bottom: -100%;
+}
+body .slidup-menu.reveal {
+  bottom: -30%;
+}
+body .airdrop-milestones-text {
+  padding: 5px;
+}
+body .airdrop-milestones-text h1, body .airdrop-milestones-text span {
+  font-size: 1.5rem;
+}
+body .airdrop-milestones-text span {
+  font-family: Orbitron;
+}
+body .airdrop-milestones-text .title, body .airdrop-milestones-text label, body .airdrop-milestones-text p {
+  font-size: 1rem;
+}
+body .airdrop-milestones-text .milestones .first, body .airdrop-milestones-text .milestones .second, body .airdrop-milestones-text .milestones .third, body .airdrop-milestones-text .milestones .fourth {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+}
+body .airdrop-milestones-text .milestones .first input[type=checkbox], body .airdrop-milestones-text .milestones .second input[type=checkbox], body .airdrop-milestones-text .milestones .third input[type=checkbox], body .airdrop-milestones-text .milestones .fourth input[type=checkbox] {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border: 2px solid #005ecb;
+  border-radius: 5px;
+}
+body .airdrop-milestones-text .milestones .first input[type=checkbox]:checked::before, body .airdrop-milestones-text .milestones .second input[type=checkbox]:checked::before, body .airdrop-milestones-text .milestones .third input[type=checkbox]:checked::before, body .airdrop-milestones-text .milestones .fourth input[type=checkbox]:checked::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #005ecb;
+}
+body .bonus-code-details {
+  padding: 10px 20px;
+}
+body .bonus-code-details h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body .bonus-code-details p {
+  font-size: 1.1rem;
+}
+body .bonus-code-details span, body .bonus-code-details a {
+  font-weight: bold;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=style.css.map */
